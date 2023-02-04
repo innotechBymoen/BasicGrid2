@@ -6,31 +6,40 @@
 
 body {
     display: grid;
+    place-items: center;
 }
 
 #page_header {
+    width: 100%;
     min-height: 10vh;
     display: grid;
     place-items: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 #page_main {
     min-height: 80vh;
     display: grid;
     place-items: center;
+    width: 90%;
 }
 
 .hippo_article {
     display: grid;
     place-items: center;
-    grid-template-columns: 1fr 1fr;
-    width: 60%;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.hippo_article>img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
 #page_footer {
+    width: 100%;
     min-height: 10vh;
     display: grid;
     place-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
